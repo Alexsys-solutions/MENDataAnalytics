@@ -1,3 +1,13 @@
+# Define Terraform provider
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "manageRG"
+    storage_account_name = "mencloudtfstate21421"
+    container_name       = "tfstate"
+    key                  = "dev.actions.tfstate"
+  }
+}
+
 provider "azurerm" {
   features {}
 }
