@@ -15,7 +15,7 @@ provider "azurerm" {
 module "examples_adb-lakehouse" {
   source  = "databricks/examples/databricks//modules/adb-lakehouse"
   version = "0.2.10"
-  
+
   # https://registry.terraform.io/modules/databricks/examples/databricks/latest/submodules/adb-lakehouse?tab=inputs
 
   access_connector_name           = "MenUnity_Connector"
