@@ -3,13 +3,13 @@ name: 'Terraform'
 on:
   push:
     branches:
-      - IaC
+      - master
     paths:
       - Terraform/**
       - .github/workflows/terraform.yml
   pull_request:
     branches:
-      - IaC
+      - master
     paths:
       - Terraform/**
       - .github/workflows/terraform.yml
