@@ -33,5 +33,8 @@ module "examples_adb-lakehouse" {
   spoke_resource_group_name       = "MenAnalyticsSpoke-RG"
   spoke_vnet_address_space        = "10.0.0.0/16"
   storage_account_names           = ["menmassstorage"]
-  tags                            = { environment = "dev" }
+  tags = { 
+    environment = "dev",
+    MEN = "Data"
+  }
 }
