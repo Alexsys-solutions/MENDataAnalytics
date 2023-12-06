@@ -41,8 +41,8 @@ module "examples_adb-lakehouse" {
 
 resource "azurerm_purview_account" "purviewtmp" {
   name                = "mengovernance"
-  resource_group_name = module.examples_adb-lakehouse.managed_resource_group_name
-  location            = module.examples_adb-lakehouse.location
+  resource_group_name = "MenAnalyticsSpoke-RG"
+  location            = "northeurope"
 
   identity {
     type = "SystemAssigned"
