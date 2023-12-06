@@ -1,4 +1,4 @@
-# Define Terraform provider
+# Define Terraform provider and backend
 terraform {
   backend "azurerm" {
     resource_group_name  = "manageRG"
