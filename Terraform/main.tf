@@ -38,3 +38,13 @@ module "examples_adb-lakehouse" {
     MEN = "Data"
   }
 }
+
+resource "azurerm_purview_account" "purviewtmp" {
+  name                = "mengovernance"
+  resource_group_name = module.examples_adb-lakehouse.managed_resource_group_name
+  location            = module.examples_adb-lakehouse.location
+
+  identity {
+    type = "SystemAssigned"
+  }
+}
