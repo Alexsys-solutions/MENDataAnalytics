@@ -42,7 +42,7 @@ module "examples_adb-lakehouse" {
 resource "azurerm_purview_account" "purviewtmp" {
   name                = "mengovernance"
   resource_group_name = "MenAnalyticsSpoke-RG"
-  location            = "eastus"
+  location            = "southafricanorth"
 
   identity {
     type = "SystemAssigned"
